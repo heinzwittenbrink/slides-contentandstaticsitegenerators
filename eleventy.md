@@ -44,11 +44,18 @@ Testversion: <https://silly-hypatia-0d5c1f.netlify.com/>
 
 ## Installation
 
+- [Getting Started—Eleventy](https://www.11ty.io/docs/getting-started/ "Getting Started—Eleventy")
+- Lokale oder globale Installation
+
 ## Generieren der Site
 
 ## Ordnerstruktur
 
 ## Content als Markdown
+
+## Frontmatter/tags
+
+## Directory data
 
 ## RSS-Feed
 
@@ -59,3 +66,16 @@ Testversion: <https://silly-hypatia-0d5c1f.netlify.com/>
 ## Netlify
 
 ## Forestry
+
+# Fragen
+
+## Unterstützen SSGs das Prinzip *Content First* besser als andere CMS?
+
+## Welchen Support bieten sie für strukturierte Daten?
+
+# Aufgaben
+
+1. Andere SSGs testen: Jekyll, Hugo
+2. Konzept einer Inhaltsstruktur für oer.fh-joanneum.at/contentstrategy entwickeln
+    - Welche collections sind interessant?
+    - Welche Metadaten sind wichtig?
