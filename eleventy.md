@@ -75,6 +75,7 @@ Testversion: <https://silly-hypatia-0d5c1f.netlify.com/>
 
 # Aufgaben
 
+##
 1. Andere SSGs testen: Jekyll, Hugo
 2. Konzept einer Inhaltsstruktur für oer.fh-joanneum.at/contentstrategy entwickeln
     - Welche collections sind interessant?
