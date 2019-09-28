@@ -126,7 +126,7 @@ metadata:
 
 ## Sitemap
 
-```markdown 
+```markdown
 ---
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
@@ -141,7 +141,6 @@ eleventyExcludeFromCollections: true
   </url>
 {%- endfor %}
 </urlset>
-
 
 ```
 
