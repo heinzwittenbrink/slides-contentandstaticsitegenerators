@@ -49,15 +49,80 @@ Testversion: <https://silly-hypatia-0d5c1f.netlify.com/>
 
 ## Generieren der Site
 
+##
+
+Beispiel: Starten von eleventy mit lokalem Server
+
+```bash
+eleventy --serve
+
+```
+
 ## Ordnerstruktur
+
+![](pics/folders_eleventy_content.png){ width=70% }
 
 ## Content als Markdown
 
+```markdown
+---
+layout: picture_desc.njk
+tags: thepromiseofthecity
+artist: Martin Grabner
+rights: Martin Grabner
+gallery:
+- martin-grabner-transformation-ldn
+title: Transformation LDN
+author: Martin Grabner
+---
+
+
+Londons Straßen nahe der City harren der unvermeidlichen Gentrifizierung. Inzwischen steht in dieser Baulücke in der Clerkenwell Road ein mehrgeschoßiges Geschäftshaus.
+
+```
+
 ## Frontmatter/tags
+
+![](pics/eleventy_front_matter.png){ width=70% }
 
 ## Directory data
 
+```json
+{
+  "layout" : "article.njk",
+  "changefreq": "monthly",
+  "priority": "0.9"
+}
+```
+
 ## RSS-Feed
+
+```markdown
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+
+metadata:
+  title: off_gallery.at
+  url: https://offgallery.at/
+  author:
+    name: Anastasija Georgi, Erika Petrić, Heinz Wittenbrink
+    email: info@offgallery.at
+  feed:
+    subtitle: offgallery_graz - Nachrichten und Einladungen
+    filename: feed.xml
+    path: feed/feed.xml
+    url: https://offgallery.at/feed.xml
+    id: https://offgallery.at/
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.feed.subtitle }}</subtitle>
+  <link href="{{ metadata.feed.url }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+
+```
 
 ## Sitemap
 
