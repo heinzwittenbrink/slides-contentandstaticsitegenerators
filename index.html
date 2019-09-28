@@ -206,6 +206,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-23" data-line-number="23">  &lt;link href=&quot;{{ metadata.url }}&quot;/&gt;</a></code></pre></div>
 </section><section id="sitemap" class="slide level2">
 <h2>Sitemap</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown"><code class="sourceCode markdown"><a class="sourceLine" id="cb5-1" data-line-number="1">---</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">permalink: /sitemap.xml</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">eleventyExcludeFromCollections: true</a>
+<a class="sourceLine" id="cb5-4" data-line-number="4">---</a>
+<a class="sourceLine" id="cb5-5" data-line-number="5">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</a>
+<a class="sourceLine" id="cb5-6" data-line-number="6">&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;</a>
+<a class="sourceLine" id="cb5-7" data-line-number="7">{%- for page in collections.all %}</a>
+<a class="sourceLine" id="cb5-8" data-line-number="8">  {% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}</a>
+<a class="sourceLine" id="cb5-9" data-line-number="9">  &lt;url&gt;</a>
+<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="bn">    &lt;loc&gt;{{ absoluteUrl }}&lt;/loc&gt;</span></a>
+<a class="sourceLine" id="cb5-11" data-line-number="11"><span class="bn">    &lt;lastmod&gt;{{ page.date | htmlDateString }}&lt;/lastmod&gt;</span></a>
+<a class="sourceLine" id="cb5-12" data-line-number="12">  &lt;/url&gt;</a>
+<a class="sourceLine" id="cb5-13" data-line-number="13">{%- endfor %}</a>
+<a class="sourceLine" id="cb5-14" data-line-number="14">&lt;/urlset&gt;</a>
+<a class="sourceLine" id="cb5-15" data-line-number="15"></a></code></pre></div>
 </section></section>
 <section><section id="ssg-ökosystem" class="title-slide slide level1"><h1>SSG-Ökosystem</h1></section><section id="netlify" class="slide level2">
 <h2>Netlify</h2>
