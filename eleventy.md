@@ -1,7 +1,7 @@
 ---
 title: Content First und Static Site Generators
 author: Heinz Wittenbrink
-date: 2019-09-21
+date: 2019-09-28
 ---
 
 # Was sind Static Site Generators
