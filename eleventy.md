@@ -302,6 +302,16 @@ Contentful: [CMS-functionality for static site generators](https://www.contentfu
 
 > In addition a plaintext version of the field will be generated using the field ID appended with "_plaintext". This allows you to quickly fetch the text by itself without any of the other data. A simple use case would be using the plaintext output to automatically generate a meta description for a webpage.
 
+# Andere Optionen: Craft und SSGs
+
+##
+
+[Turn Craft 3 into a headless CMS](https://dev.edenspiekermann.com/2019/01/21/turn-craft-into-a-headless-cms/ "Turn Craft 3 into a headless CMS")
+
+##
+
+[Consuming a headless CMS GraphQL API with Eleventy](https://www.webstoemp.com/blog/headless-cms-graphql-api-eleventy/ "Consuming a headless CMS GraphQL API with Eleventy - Webstoemp")
+
 
 # Fragen
 
