@@ -187,6 +187,14 @@ Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights
 
 Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
 
+##
+
+> You want this, so that non-technical folks are also able to create content for static site generators.
+> You want this, so that you can use static site generators in many more customer projects.
+> You want this, so that no developer is required to update the repository and run the site.
+
+Contentful: [CMS-functionality for static site generators](https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/)
+
 ## Vorteile typischer Content Management Systeme
 
 - Nutzerverwaltung
@@ -234,6 +242,29 @@ Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights
 
 [Static site generators – Contentful](https://www.contentful.com/developers/docs/tools/staticsitegenerators/)
 
+##
+
+Contentful
+
+> offers webhooks that you can use to rebuild your static site in a fully automated fashion every time your content is modified.
+
+Contentful: [CMS-functionality for static site generators](https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/)
+
+
+## Building und Deploying Sites/Apps
+
+> On your host: Create a webhook endpoint that starts a new build and deploys a project whenever it receives a POST request.
+
+> On Contentful: Create a webhook with the host endpoint as destination URL.
+
+Contentful: [CMS-functionality for static site generators](https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/)
+
+## Staging
+
+> deploying to a separate domain that is only known to your editors will give them the chance to preview if the site is exactly looking like they want it to.
+
+Contentful: [CMS-functionality for static site generators](https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/)
+
 ## Tools
 
 
@@ -245,6 +276,31 @@ Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights
 
 [Importing and exporting content with the Contentful CLI – Contentful](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/)
 
+
+## Beispielprojekt Contentful und Hugo
+
+- [contentful-hugo](https://www.npmjs.com/package/contentful-hugo)
+- Bei diesem Projekt kann man sehen, wie die contentful Dateien in die Hugo Struktur, also eine Struktur von markdown Dateien übersetzt wird.
+
+##
+
+> This is a simple Node.js CLI tool that pulls data from Contentful CMS and turns it into Markdown or YAML files for use with a static site generator. It can be used with any static site generator that uses Markdown with YAML frontmatter, but it has some features that are specific to Hugo.
+
+##
+
+> In this example when you run npm start it will first use contentful-hugo to pull Contentful data then start hugo server. In the same way when you do the command npm run build it will first use contentful-hugo to pull Contentful data then run hugo --minify to build a minified version of your hugo site.
+
+##
+
+> Files will be generated in the directory specified in the contentful-settings.yaml file. Front matter will be in YAML format. Files of single types will be named after fileName specified in the config file. Files of repeatable types will be named after their entry ID in Contenful, which makes it easy to link files together.
+
+## JSON für Rich Text
+
+> A Rich text field will produce nested arrays mirroring the JSON structure that they have in the API. Each node will need to be looped through and produce HTML depending on the nodeType field.
+
+##
+
+> In addition a plaintext version of the field will be generated using the field ID appended with "_plaintext". This allows you to quickly fetch the text by itself without any of the other data. A simple use case would be using the plaintext output to automatically generate a meta description for a webpage.
 
 
 # Fragen

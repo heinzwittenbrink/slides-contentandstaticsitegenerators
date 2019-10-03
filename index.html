@@ -258,6 +258,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s sum it up this way: Static sites offer no inherent build and management interface.</p>
 </blockquote>
 <p>Mark Figgart: <a href="https://www.digett.com/insights/pairing-static-websites-cms">Pairing Static Websites with CMS</a></p>
+</section><section id="section-6" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>You want this, so that non-technical folks are also able to create content for static site generators. You want this, so that you can use static site generators in many more customer projects. You want this, so that no developer is required to update the repository and run the site.</p>
+</blockquote>
+<p>Contentful: <a href="https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/">CMS-functionality for static site generators</a></p>
 </section><section id="vorteile-typischer-content-management-systeme" class="slide level2">
 <h2>Vorteile typischer Content Management Systeme</h2>
 <ul>
@@ -268,37 +274,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>URL Handling</li>
 </ul>
 <p>Mark Figgart <a href="https://www.digett.com/insights/pairing-static-websites-cms">Pairing Static Websites with CMS</a></p>
-</section><section id="section-6" class="slide level2">
+</section><section id="section-7" class="slide level2">
 <h2></h2>
 <blockquote>
 <p>Untuned, a CMS can be disappointingly slow. The traditional solution has been to throw more technology on the stack in the form of high-performance caching mechanisms. In essence, these solutions create, you guessed it, a “static” version of the site, and serve pages from it in response to requests.</p>
 </blockquote>
 <p>Mark Figgart <a href="https://www.digett.com/insights/pairing-static-websites-cms">Pairing Static Websites with CMS</a></p>
-</section><section id="section-7" class="slide level2">
+</section><section id="section-8" class="slide level2">
 <h2></h2>
 <blockquote>
 <p>Practically speaking, however, these caching solutions tend to be complex and expensive.</p>
 </blockquote>
 <p>Mark Figgart: <a href="https://www.digett.com/insights/pairing-static-websites-cms">Pairing Static Websites with CMS</a></p>
-</section><section id="section-8" class="slide level2">
+</section><section id="section-9" class="slide level2">
 <h2></h2>
 <blockquote>
 <p>So what if we could assemble an approach to building, deploying and managing websites with all the benefits of static files — including speed and security — with the robust build and management capabilities of a tool like Wordpress or Drupal?</p>
 </blockquote>
 <p>Mark Figgart: <a href="https://www.digett.com/insights/pairing-static-websites-cms">Pairing Static Websites with CMS</a></p>
-</section><section id="section-9" class="slide level2">
+</section><section id="section-10" class="slide level2">
 <h2></h2>
 <blockquote>
 <p>we extract a static representation of the site’s output in the form of a complete file and folder hierarchy. This static version of the site is what gets pushed to the web server.</p>
 </blockquote>
 <p>Mark Figgart: <a href="https://www.digett.com/insights/pairing-static-websites-cms">Pairing Static Websites with CMS</a></p>
 </section></section>
-<section><section id="support-von-ssgs-durch-contenful" class="title-slide slide level1"><h1>Support von SSGs durch Contenful</h1></section><section id="section-10" class="slide level2">
+<section><section id="support-von-ssgs-durch-contenful" class="title-slide slide level1"><h1>Support von SSGs durch Contenful</h1></section><section id="section-11" class="slide level2">
 <h2></h2>
 <blockquote>
 <p>We love static sites and have plugins to support four of our favorites.</p>
 </blockquote>
 <p><a href="https://www.contentful.com/developers/docs/tools/staticsitegenerators/">Static site generators – Contentful</a></p>
+</section><section id="section-12" class="slide level2">
+<h2></h2>
+<p>Contentful</p>
+<blockquote>
+<p>offers webhooks that you can use to rebuild your static site in a fully automated fashion every time your content is modified.</p>
+</blockquote>
+<p>Contentful: <a href="https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/">CMS-functionality for static site generators</a></p>
+</section><section id="building-und-deploying-sitesapps" class="slide level2">
+<h2>Building und Deploying Sites/Apps</h2>
+<blockquote>
+<p>On your host: Create a webhook endpoint that starts a new build and deploys a project whenever it receives a POST request.</p>
+</blockquote>
+<blockquote>
+<p>On Contentful: Create a webhook with the host endpoint as destination URL.</p>
+</blockquote>
+<p>Contentful: <a href="https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/">CMS-functionality for static site generators</a></p>
+</section><section id="staging" class="slide level2">
+<h2>Staging</h2>
+<blockquote>
+<p>deploying to a separate domain that is only known to your editors will give them the chance to preview if the site is exactly looking like they want it to.</p>
+</blockquote>
+<p>Contentful: <a href="https://www.contentful.com/r/knowledgebase/contentful-api-cms-static-site-generators/">CMS-functionality for static site generators</a></p>
 </section><section id="tools" class="slide level2">
 <h2>Tools</h2>
 <ul>
@@ -309,13 +337,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section><section id="exportieren" class="slide level2">
 <h2>Exportieren</h2>
 <p><a href="https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/">Importing and exporting content with the Contentful CLI – Contentful</a></p>
+</section><section id="beispielprojekt-contentful-und-hugo" class="slide level2">
+<h2>Beispielprojekt Contentful und Hugo</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/contentful-hugo">contentful-hugo</a></li>
+<li>Bei diesem Projekt kann man sehen, wie die contentful Dateien in die Hugo Struktur, also eine Struktur von markdown Dateien übersetzt wird.</li>
+</ul>
+</section><section id="section-13" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>This is a simple Node.js CLI tool that pulls data from Contentful CMS and turns it into Markdown or YAML files for use with a static site generator. It can be used with any static site generator that uses Markdown with YAML frontmatter, but it has some features that are specific to Hugo.</p>
+</blockquote>
+</section><section id="section-14" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>In this example when you run npm start it will first use contentful-hugo to pull Contentful data then start hugo server. In the same way when you do the command npm run build it will first use contentful-hugo to pull Contentful data then run hugo –minify to build a minified version of your hugo site.</p>
+</blockquote>
+</section><section id="section-15" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>Files will be generated in the directory specified in the contentful-settings.yaml file. Front matter will be in YAML format. Files of single types will be named after fileName specified in the config file. Files of repeatable types will be named after their entry ID in Contenful, which makes it easy to link files together.</p>
+</blockquote>
+</section><section id="json-für-rich-text" class="slide level2">
+<h2>JSON für Rich Text</h2>
+<blockquote>
+<p>A Rich text field will produce nested arrays mirroring the JSON structure that they have in the API. Each node will need to be looped through and produce HTML depending on the nodeType field.</p>
+</blockquote>
+</section><section id="section-16" class="slide level2">
+<h2></h2>
+<blockquote>
+<p>In addition a plaintext version of the field will be generated using the field ID appended with &quot;_plaintext&quot;. This allows you to quickly fetch the text by itself without any of the other data. A simple use case would be using the plaintext output to automatically generate a meta description for a webpage.</p>
+</blockquote>
 </section></section>
 <section><section id="fragen" class="title-slide slide level1"><h1>Fragen</h1></section><section id="unterstützen-ssgs-das-prinzip-content-first-besser-als-andere-cms" class="slide level2">
 <h2>Unterstützen SSGs das Prinzip <em>Content First</em> besser als andere CMS?</h2>
 </section><section id="welchen-support-bieten-sie-für-strukturierte-daten" class="slide level2">
 <h2>Welchen Support bieten sie für strukturierte Daten?</h2>
 </section></section>
-<section><section id="aufgaben" class="title-slide slide level1"><h1>Aufgaben</h1></section><section id="section-11" class="slide level2">
+<section><section id="aufgaben" class="title-slide slide level1"><h1>Aufgaben</h1></section><section id="section-17" class="slide level2">
 <h2></h2>
 <ol type="1">
 <li>Andere SSGs testen: Jekyll, Hugo</li>
