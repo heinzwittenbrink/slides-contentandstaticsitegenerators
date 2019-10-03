@@ -150,15 +150,114 @@ eleventyExcludeFromCollections: true
 
 ## Forestry
 
+
+# Verbindung von CMS und SSGs
+
+##
+
+> I’m going out on a limb by saying we may be on the cusp of a revolution as it relates to how we build, deploy and manage websites.
+
+Mark Figgart [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
+
+
+
+## Vorteile von SSGs
+
+## Tempo
+
+> First, static sites are blazing fast. A web server tasked with serving static sites can run circles around a web server bogged down with executing server-side scripts and making twenty-plus database queries per HTTP request. It’s an all-too-common scenario.
+
+Mark Figgart  [Pairing Static Websites with CMS | Digett](https://www.digett.com/insights/pairing-static-websites-cms)  (2014)
+
+## Sicherheit
+
+> static sites typically don’t expose the vulnerabilities that so often come with a site dependent on execution of scripts like PHP and ASP.net and running on the public Internet
+
+Mark Figgart  [Pairing Static Websites with CMS | Digett](https://www.digett.com/insights/pairing-static-websites-cms)  (2014)
+
+## Nachteile
+
+> Unfortunately, static websites don’t lend themselves to the serious work some might demand of, say, a mission-critical sales and marketing tool.
+
+Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)  (2014)
+
+##
+
+> Let’s sum it up this way: Static sites offer no inherent build and management interface.
+
+Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
+
+## Vorteile typischer Content Management Systeme
+
+- Nutzerverwaltung
+- Rechte-Administration
+- Inhaltsmodellierung
+- Aktualisierung und Versionsverwaltung
+- URL Handling
+
+Mark Figgart [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
+
+
+##
+
+> Untuned, a CMS can be disappointingly slow. The traditional solution has been to throw more technology on the stack in the form of high-performance caching mechanisms. In essence, these solutions create, you guessed it, a "static” version of the site, and serve pages from it in response to requests.
+
+Mark Figgart [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
+
+
+
+##
+
+> Practically speaking, however, these caching solutions tend to be complex and expensive.
+
+Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
+
+##
+
+> So what if we could assemble an approach to building, deploying and managing websites with all the benefits of static files — including speed and security — with the robust build and management capabilities of a tool like Wordpress or Drupal?
+
+Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
+
+##
+
+> we extract a static representation of the site’s output in the form of a complete file and folder hierarchy. This static version of the site is what gets pushed to the web server.
+
+Mark Figgart: [Pairing Static Websites with CMS](https://www.digett.com/insights/pairing-static-websites-cms)
+
+
+
+# Support von SSGs durch Contenful
+
+##
+
+> We love static sites and have plugins to support four of our favorites.
+
+[Static site generators – Contentful](https://www.contentful.com/developers/docs/tools/staticsitegenerators/)
+
+## Tools
+
+
+- Plugins für Middleman, Jekyll, Gatsby, Metalsmith
+- Nicht offiziell supportete Plugins für Roots und AWS Lambda
+- Nicht offizieller Simple Static Site Generator (*A CLI tool to generate a site from templates and data in a Contentful space*)
+
+## Exportieren
+
+[Importing and exporting content with the Contentful CLI – Contentful](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/)
+
+
+
 # Fragen
 
 ## Unterstützen SSGs das Prinzip *Content First* besser als andere CMS?
 
 ## Welchen Support bieten sie für strukturierte Daten?
 
+
 # Aufgaben
 
 ##
+
 1. Andere SSGs testen: Jekyll, Hugo
 2. Konzept einer Inhaltsstruktur für oer.fh-joanneum.at/contentstrategy entwickeln
     - Welche collections sind interessant?
